@@ -1,2 +1,10 @@
 #!/bin/bash
+read -p $CFILE
 gcc $CFILE -o cisfun
+if [ $? -eq 0 ]
+	 echo "Compilation successful. Executable created:
+cisfun"
+else
+	 echo "Compilation failed."
+fi
+# End of script
