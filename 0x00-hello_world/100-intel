@@ -1,17 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from user input
-read -p "Enter the name of your C file: " CFILE
-
-# Compile the C file and create an executable named cisfun
 gcc $CFILE -o cisfun
-
-# Check if compilation was successful
-if [ $? -eq 0 ]
-then
-    echo "Compilation successful. Executable created: cisfun"
-else
-    echo "Compilation failed."
-fi
-
-# End of script
