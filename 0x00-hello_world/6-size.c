@@ -1,13 +1,19 @@
 #include <stdio.h>
 
-int main() {
-   printf("Size of char: %ld byte(s)\n", sizeof(char));
-   printf("Size of short: %ld byte(s)\n", sizeof(short));
-   printf("Size of int: %ld byte(s)\n", sizeof(int));
-   printf("Size of long: %ld byte(s)\n", sizeof(long));
-   printf("Size of float: %ld byte(s)\n", sizeof(float));
-   printf("Size of double: %ld byte(s)\n", sizeof(double));
-   printf("Size of long double: %ld byte(s)\n", sizeof(long double));
+/**
+ * main - Entry point
+ *
+ * Description: using sizeof to print the size of various types.
+ *
+ * Return: Always 0 (Success)
+*/
 
-   return 0;
+int main(void)
+{
+	printf("Size of a char: %u byte(s)\n", sizeof(char));
+	printf("Size of an int: %u byte(s)\n", sizeof(int));
+	printf("Size of a long int: %u byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %u byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %u byte(s)\n", sizeof(float));
+	return (0);
 }
