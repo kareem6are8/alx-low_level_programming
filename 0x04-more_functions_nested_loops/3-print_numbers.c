@@ -1,18 +1,21 @@
 #include "main.h"
 
 /**
- * print_numbers - Print the numbers since 0 up to 9
- * Return: the numbers since 0 up to 9
- */
+ * print_numbers - prints an integer number
+ *
+ * @n: the integer number we printed
+*/
 
-void print_numbers(void)
+void print_numbers(int n)
 {
+	unsigned int num = n;
 
-	int x;
-
-	for (x = 0; x <= 9; X++)
+	if (n < 0)
 	{
-	_putcher(x + '0');
+		_putcher('_');
+		num = -num;
 	}
-	_putcher('\n');
+	if ((num / 10) > 0)
+		print_number(num / 10);
+	_putcher((num % 10) + 48);
 }
