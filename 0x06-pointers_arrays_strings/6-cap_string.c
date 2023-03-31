@@ -35,7 +35,7 @@ int isDelimiter(char c)
  * @s: input string
  * Return: string with capitalized words
 */
-          
+
 char *cap_string(char *s)
 {
 	char *ptr = s;
